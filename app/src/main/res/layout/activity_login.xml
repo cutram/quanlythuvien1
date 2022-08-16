@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorDark"
+    tools:context=".LoginActivity"
+   >
+
+    <ImageView
+        android:id="@+id/bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:scaleType="centerCrop"
+        android:src="@drawable/nen" />
+
+    <ImageView
+        android:id="@+id/cloud1"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:scaleType="centerCrop"
+            android:src="@drawable/c" />
+    <ImageView
+        android:id="@+id/cloud2"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="50dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/may" />
+    <ImageView
+        android:id="@+id/stars"
+        android:layout_alignParentRight="true"
+
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="60dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/png"
+        android:layout_marginRight="130dp"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:padding="50dp">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="80dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:paddingTop="90dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+
+                        android:id="@+id/edUserName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="19dp"
+                        android:background="@drawable/custom_input"
+                        android:drawableStart="@drawable/custom_email_icon"
+                        android:hint="Username"
+                        android:padding="17dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    app:passwordToggleEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+
+                        android:id="@+id/edPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/custom_input"
+                        android:drawableStart="@drawable/costom_lock"
+                        android:hint="PassWord"
+                        android:padding="17dp"
+                        android:password="true" />
+
+                    <CheckBox
+                        android:id="@+id/chkRememberPass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:text="Lưu mật khẩu" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal"
+                        android:padding="20dp">
+
+                        <Button
+                            android:layout_marginRight="12dp"
+                            android:background="@drawable/custom_input2"
+                            android:id="@+id/btnLogin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Đăng nhập" />
+
+                        <Button
+
+                            android:background="@drawable/custom_input2"
+                            android:id="@+id/btnCancel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Hủy" />
+                    </LinearLayout>
+<Button
+    android:id="@+id/dangki"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:text="đăng kí"
+    android:layout_gravity="center"
+    android:background="@drawable/custom_input2"
+    android:onClick="dangki"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

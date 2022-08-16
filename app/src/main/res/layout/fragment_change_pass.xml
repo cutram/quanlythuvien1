@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#dff9fb"
+    tools:context=".fragment.ChangePassFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/ic_pass"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/custom_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true"
+        android:layout_marginBottom="20dp">
+<com.google.android.material.textfield.TextInputEditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/edPassOld"
+    android:inputType="textPassword"
+    android:maxLines="1"
+    android:hint="mật khẩu cũ"/>
+
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/custom_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true"
+        android:layout_marginBottom="20dp">
+<com.google.android.material.textfield.TextInputEditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/edPassChange"
+    android:inputType="textPassword"
+    android:maxLines="1"
+    android:hint="mật khẩu"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/custom_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        app:passwordToggleEnabled="true">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edRePassChange"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:hint="nhập lại mật khẩu"/>
+
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+<Button
+    android:background="@drawable/custom_input2"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:text="lưu"
+    android:textSize="20dp"
+    android:drawableStart="@drawable/ic_save"
+    android:layout_marginLeft="50dp"
+    android:id="@+id/btnSaveUserChange"/>
+        <Button
+            android:background="@drawable/custom_input2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_cancel"
+            android:text="hủy"
+            android:layout_marginLeft="110dp"
+            android:textSize="20dp"
+            android:id="@+id/btnCancelUserChange"/>
+
+    </LinearLayout>
+</LinearLayout>

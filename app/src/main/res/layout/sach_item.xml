@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cns_sach"
+    android:padding="12dp"
+    android:background="@drawable/custom_input"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <ImageView
+        android:id="@+id/imgSach1"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:src="@drawable/bookicon"
+
+        />
+    <ImageView
+        android:id="@+id/imgSach2"
+        android:paddingLeft="30dp"
+        android:layout_width="70dp"
+        android:layout_height="20dp"
+        android:src="@drawable/tinn"
+        />
+        <ImageView
+            android:id="@+id/imgSach3"
+            android:paddingLeft="30dp"
+            android:layout_width="70dp"
+            android:layout_height="20dp"
+            android:src="@drawable/png"
+            />
+    </LinearLayout>
+        />
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="10"
+        >
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/tvMaSach"
+    android:textSize="14dp"
+    android:text="Mã sách"/>
+        <TextView
+            android:textColor="#008080"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvTenSach"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Tên sách"/>
+        <TextView
+            android:textColor="#0000FF"
+            android:layout_width="match_parent"
+            android:layout_height="23dp"
+            android:id="@+id/tvGiaThue"
+            android:textSize="14dp"
+            android:text="Giá thuê"/>
+        <TextView
+            android:textColor="#00BFFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvLoai"
+            android:textSize="14dp"
+            android:text="Loại sách"/>
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="85dp"
+        android:id="@+id/imgDeleteLS"
+        android:layout_weight="1"
+        android:src="@drawable/ic_delete"/>
+</LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:id="@+id/cns_pm"
+    android:padding="12dp"
+    android:background="@drawable/custom_input"
+    android:layout_height="wrap_content">
+<ImageView
+    android:id="@+id/imgPhieuMuon"
+    android:layout_width="80dp"
+    android:layout_height="90dp"
+    android:src="@drawable/p"/>
+<LinearLayout
+
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_weight="10">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvMaPM"
+        android:textSize="14dp"
+        android:text="Mã phiếu mượn"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:textColor="#008080"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTenSach"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_weight="2"
+        android:text="Tên sách"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTraSach"
+        android:layout_weight="1"
+        android:text="Trả sách"/>
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:textColor="#8B4513"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="14dp"
+            android:id="@+id/tvTienThue"
+            android:text="Tiền thuê"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvNgayPM"
+            android:layout_weight="1"
+            android:textSize="14dp"
+            android:text="Ngày"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:textColor="#00CC33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="thành viên"
+            android:textStyle="bold"
+            android:id="@+id/tvTenThanhVienPM"/>
+    </LinearLayout>
+</LinearLayout>
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="85dp"
+        android:id="@+id/imgDeleteLS"
+        android:layout_weight="1"
+        android:src="@drawable/ic_delete"/>
+
+</LinearLayout>
